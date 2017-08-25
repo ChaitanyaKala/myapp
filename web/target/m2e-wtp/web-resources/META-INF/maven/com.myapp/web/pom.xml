@@ -8,13 +8,11 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   <groupId>com.myapp</groupId>
-  <artifactId>presentation</artifactId>
+  <artifactId>web</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>presentation</name>
+  <packaging>war</packaging>
+  <name>web Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -23,5 +21,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <packaging>war</packaging>
+  <build>
+    <finalName>web</finalName>
+  </build>
 </project>
